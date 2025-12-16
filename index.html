@@ -6,11 +6,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Fonte Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
             padding: 30px 15px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
             background-image: url('fundo.jpg');
             background-size: cover;
             background-position: center;
@@ -25,14 +28,12 @@
             text-align: center;
         }
 
-        /* LOGO */
         .logo {
             width: 100%;
             max-width: 280px;
             margin: 0 auto 25px;
         }
 
-        /* BOTÕES */
         .btn {
             display: block;
             width: 100%;
@@ -40,7 +41,7 @@
             margin-bottom: 12px;
             text-decoration: none;
             font-size: 16px;
-            font-weight: bold;
+            font-weight: 600;
             color: #ffffff;
             background-color: #000000;
             border-radius: 8px;
@@ -50,11 +51,37 @@
             opacity: 0.85;
         }
 
-        /* PLANO DE MÍDIA */
+        /* TEXTO APOIADOR */
+        .apoio-texto {
+            margin: 30px 0 10px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        /* SETA */
+        .seta {
+            font-size: 28px;
+            margin-bottom: 20px;
+            animation: bounce 1.2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(6px);
+            }
+            60% {
+                transform: translateY(3px);
+            }
+        }
+
         .plano {
             width: 100%;
             max-width: 380px;
-            margin: 30px auto 0;
+            margin: 0 auto 20px;
             border-radius: 6px;
         }
     </style>
@@ -63,7 +90,7 @@
 
     <div class="container">
 
-        <!-- LOGO DO GRUPO -->
+        <!-- LOGO -->
         <img src="logo-ccg.jpg" alt="Colecionadores CG" class="logo">
 
         <!-- BOTÕES -->
@@ -75,9 +102,16 @@
             YouTube
         </a>
 
-        <a class="btn" href="https://youtube.com/@colecionadorescg?si=BcJ_F_j_401P6m2c">
+        <a class="btn" href="https://chat.whatsapp.com/JnZXXbswKMR39JTtvtkBgL">
             WhatsApp
         </a>
+
+        <!-- TEXTO + SETA -->
+        <div class="apoio-texto">
+            Seja nosso apoiador, segue abaixo nosso plano de mídia
+        </div>
+
+        <div class="seta">⬇️</div>
 
         <!-- PLANO DE MÍDIA -->
         <img src="plano-de-midia.jpg" alt="Plano de Mídia" class="plano">
